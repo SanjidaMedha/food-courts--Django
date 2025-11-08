@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Chicken rice & Biryani
+{% endblock title %}
+{% block css %}{% endblock css %}
+
+{% block content %}
+
+<div class="container pb-4 pt-3">
+    <h2 class="justify-content-center text-center mt-3 mb-4">
+        Meet With Halal Chicken Rice & Biryani 
+    </h2>
+    
+    <!-- Bootstrap Carousel -->
+    <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- First slide -->
+            <div class="carousel-item active">
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/rice2.jpg" %}" class="card-img-top" alt="Restaurant 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Chicken Rice</h5>
+                                <p class="card-text"></p>
+                              
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/rice3.jpg" %}" class="card-img-top" alt="Restaurant 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Chicken Rice</h5>
+                                <p class="card-text"></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+               </div>
+
+             <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/rice1.jpg" %}" class="card-img-top" alt="Restaurant 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Chicken Rice</h5>
+                                <p class="card-text"></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/rice4.jpg" %}" class="card-img-top" alt="Restaurant 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Biryani</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/rice5.jpg" %}" class="card-img-top" alt="Restaurant 5">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Biryani</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+             
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/rice6.jpg" %}" class="card-img-top" alt="Restaurant 6">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Biryani</h5>
+                                <p class="card-text"></p>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="menu-section container">
+            <h2 class="text-center mt-5 mb-4">Chicken Rice items</h2>
+            <p class="text-center">Served with cabbage salad, seasoned pita, and a choice of sides.</p>
+            
+            <!-- Menu items row 1 -->
+            <div class="row menu-item mb-4">
+                <div class="col-md-6">
+                    <div class="menu-item-container d-flex">
+                        <img src="{% static 'images/frice.jpg' %}" class="img-fluid menu-img" alt="Chicken Shawarma">
+                        <div class="menu-info ms-3">
+                            <h5>Chicken Fried Rice</h5>
+                            <p>Broiled marinated chicken breast, served with lettuce, tomatoes, tahini, and garlic sauce.</p>
+                            <span class="price">$17.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item-container d-flex">
+                        <img src="{% static 'images/grice.jpg' %}" class="img-fluid menu-img" alt="Tri-Tip Shawarma">
+                        <div class="menu-info ms-3">
+                            <h5>Ginger Chicken and Rice</h5>
+                            <p>Fresh ginger, skinless chicken thighs or breasts with onion mix, jasmine rice, and scallions.</p>
+                            <span class="price">$18.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu items row 2 -->
+            <div class="row menu-item mb-4">
+                <div class="col-md-6">
+                    <div class="menu-item-container d-flex">
+                        <img src="{% static 'images/price.jpg' %}" class="img-fluid menu-img" alt="Khash-Khash Kebab">
+                        <div class="menu-info ms-3">
+                            <h5>Chilli Peanut Chiken with Rice</h5>
+                            <p>Chicken thigh, brown onion, finely chopped & spiced tomatoes with garlic.</p>
+                            <span class="price">$19.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item-container d-flex">
+                        <img src="{% static 'images/trice.jpg' %}" class="img-fluid menu-img" alt="Mom’s Beuftek">
+                        <div class="menu-info ms-3">
+                            <h5>Thai chicken and rice tray bake</h5>
+                            <p>Chicken thigh cutlets, skin on, served with sautéed onions, citrus green onion mix, and tomatoes.</p>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Add more rows as needed -->
+        </div>
+        
+
+
+
+
+
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Explore All Restaurants Button -->
+    <div class="text-center mt-4">
+        <a href="/" class="btn  btn-outline-warning ">Explore all restaurants</a>
+    </div>
+</div>
+
+
+{% endblock content %}

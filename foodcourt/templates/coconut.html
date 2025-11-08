@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Green Coconut Page
+{% endblock title %}
+
+{% block css %}{% endblock css %}
+
+{% block content %}
+
+<div class="container pb-4 pt-3">
+    <h2 class="justify-content-center text-center mt-3 mb-4">
+        Meet With Fresh Halal Green Coconut
+    </h2>
+    
+    <!-- Bootstrap Carousel -->
+    <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- First slide -->
+            <div class="carousel-item active">
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/dav4.jpg" %}" class="card-img-top" alt="Restaurant 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/dav2.jpg" %}" class="card-img-top" alt="Restaurant 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text"></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/dav6.jpg" %}" class="card-img-top" alt="Restaurant 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text"></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/dav7.jpg" %}" class="card-img-top" alt="Restaurant 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/dav1.jpg" %}" class="card-img-top" alt="Restaurant 5">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+             
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static "images/dav5.jpg" %}" class="card-img-top" alt="Restaurant 6">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text"></p>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="menu-section container">
+            <h2 class="text-center mt-5 mb-4">Specialty Entrées</h2>
+            <p class="text-center">Served with cabbage salad, seasoned pita, and a choice of sides.</p>
+            
+            <!-- Menu items row 1 -->
+            <div class="row menu-item mb-4">
+                <div class="col-md-6">
+                    <div class="menu-item-container d-flex">
+                        <img src="{% static 'coconut-milk.jpg' %}" class="img-fluid menu-img" alt="Chicken Shawarma">
+                        <div class="menu-info ms-3">
+                            <h5>Chinese Coconut Milk </h5>
+                            <p>Coconut Milk,Water,Sugar,Salt .</p>
+                            <span class="price">$8.50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item-container d-flex">
+                        <img src="{% static 'images/tri-tip-shawarma.jpg' %}" class="img-fluid menu-img" alt="Tri-Tip Shawarma">
+                        <div class="menu-info ms-3">
+                            <h5>Tri-Tip Shawarma</h5>
+                            <p>Marinated tri-tip, thinly sliced and served with onion mix, tahini sauce, and hummus dip.</p>
+                            <span class="price">$18.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu items row 2 -->
+            <div class="row menu-item mb-4">
+                <div class="col-md-6">
+                    <div class="menu-item-container d-flex">
+                        <img src="{% static 'images/khash-khash-kebab.jpg' %}" class="img-fluid menu-img" alt="Khash-Khash Kebab">
+                        <div class="menu-info ms-3">
+                            <h5>Khash-Khash Kebab</h5>
+                            <p>Beef kafta kebab, served on a chunky bed of spiced tomatoes with garlic.</p>
+                            <span class="price">$19.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item-container d-flex">
+                        <img src="{% static 'images/moms-beuftek.jpg' %}" class="img-fluid menu-img" alt="Mom’s Beuftek">
+                        <div class="menu-info ms-3">
+                            <h5>Mom’s Beuftek</h5>
+                            <p>Butterflied choice filet mignon, served with sautéed onions, citrus green onion mix, and tomatoes.</p>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Add more rows as needed -->
+        </div>
+        
+
+
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Explore All Restaurants Button -->
+    <div class="text-center mt-4">
+        <a href="/" class="btn  btn-outline-warning ">Explore all restaurants</a>
+    </div>
+</div>
+
+{% endblock content %}

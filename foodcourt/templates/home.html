@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block css %}{% endblock css %}
+
+
+{% block content %}
+
+
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">Welcome to FoodCourt</h1>
+        <p class="hero-subtitle">Delicious meals delivered right to your doorstep.</p>
+        <div class="hero-buttons">
+            <a href="#" class="btn btn-outline-primary">Order Now</a>
+            <a href="#" class="btn btn-outline-success">Get Support</a>
+        </div>
+    </div>
+</div>
+<div class="container pb-4 pt-3">
+    <h2 class="justify-content-center text-center mt-3 mb-4">
+        Meet the restaurants
+    </h2>
+    
+    <!-- Bootstrap Carousel -->
+    <div id="restaurantCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- First slide -->
+            <div class="carousel-item active">
+                <div class="row ">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static "images/roti.jpeg" %}" class="card-img-top" alt="Restaurant 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Halal Roti</h5>
+                                <p class="card-text">Food special roti items</p>
+                                <a href="{% url "roti" %}" class="btn btn-primary">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static "images/rdaab.jpeg" %}" class="card-img-top" alt="Restaurant 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Green Coconut items</h5>
+                                <p class="card-text">Drinking coconut water</p>
+                                <a href="{% url "coconut" %}" class="btn btn-primary">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static "images/rice.jpeg" %}" class="card-img-top" alt="Restaurant 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Chicken rice & Biryani</h5>
+                                <p class="card-text">Tasty meals served fresh</p>
+                                <a href="{% url "biryani" %}" class="btn btn-primary">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second slide -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static "images/fruits.jpeg" %}" class="card-img-top" alt="Restaurant 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Fresh fruits</h5>
+                                <p class="card-text">The best fresh fruits</p>
+                                <a href="{% url "fruits" %}" class="btn btn-primary">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static "images/img1.jpg" %}" class="card-img-top" alt="Restaurant 5">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Grill & Thrill</h5>
+                                <p class="card-text">Best grilled dishes in town</p>
+                                <a href="#" class="btn btn-primary">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static "images/img1.jpg" %}" class="card-img-top" alt="Restaurant 6">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Biriani Bliss</h5>
+                                <p class="card-text">Delicious biriani goods</p>
+                                <a href="#" class="btn btn-primary">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#restaurantCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Explore All Restaurants Button -->
+    <div class="text-center mt-4">
+        <a href="#" class="btn  btn-outline-warning ">Explore all restaurants</a>
+    </div>
+</div>
+
+
+{% endblock content %}
